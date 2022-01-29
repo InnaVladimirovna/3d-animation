@@ -1,0 +1,65 @@
+.vertikal .box{
+    width: 200px;
+    height: 300px;
+    border: 1px solid gray;
+    perspective: 1000px;
+}
+.boxsIde{
+    width: 100%;
+    height: 100%;
+    position: relative;
+    transition: transform 3s;
+    transform-style: preserve-3d;
+}
+.back, .front{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+.front{
+    width: 200px;
+    height: 300px;
+    background: url(../img/main921.jpg) no-repeat;
+    background-position: -93px 0;
+}
+.vertikal .box:hover .boxsIde{
+    transform: rotateY(180deg);
+}
+.back{
+    transform: rotateY(180deg);
+    background: url(../img/main921.jpg) no-repeat;
+    background-position: -500px 0;
+}
+.gorizontal .boxs{
+    width: 200px;
+    height: 300px;
+    border: 1px solid gray;
+    perspective: 1000px;
+    margin: 10px;
+}
+.boxIde{
+    width: 100%;
+    height: 100%;
+    position: relative;
+    transition: transform 3s;
+    transform-style: preserve-3d;
+}
+.gorizontal .back, .front{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+.gorizontal .front{
+    width: 200px;
+    height: 300px;
+    background: url(../img/main921.jpg) no-repeat;
+    background-position: -93px 0;
+}
+.gorizontal .boxs:hover .boxIde{
+    transform: rotateX(180deg);
+}
+.gorizontal .back{
+    transform: rotateX(180deg);
+    background: url(../img/main921.jpg) no-repeat;
+    background-position: -500px 0;
+}

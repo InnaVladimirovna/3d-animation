@@ -1,0 +1,96 @@
+.conteiner{
+    position: relative;
+    width: 400px;
+    height: 400px;
+    margin: 0 auto;
+    background: linear-gradient(45deg, rgb(238, 235, 199), rgb(216, 235, 131), gold);
+    animation: picture 2s linear infinite;
+}
+@keyframes picture {
+    0%{
+        background: linear-gradient(45deg, rgb(238, 235, 199) 0, rgb(216, 235, 131), gold);
+    }
+    20%{
+        background: linear-gradient(45deg, rgb(238, 235, 199) 20%, rgb(216, 235, 131), gold);
+    }
+    40%{
+        background: linear-gradient(45deg, rgb(238, 235, 199) 40%, rgb(216, 235, 131), gold);
+    }
+    60%{
+        background: linear-gradient(45deg, rgb(238, 235, 199) 60%, rgb(216, 235, 131), gold);
+    }
+    80%{
+        background: linear-gradient(45deg, rgb(238, 235, 199)80%, rgb(216, 235, 131), gold);
+    }
+    100%{
+        background: linear-gradient(45deg, rgb(238, 235, 199) 100%, rgb(216, 235, 131), gold);
+    }
+    
+}
+.block{
+    position: absolute;
+    width: 400px;
+    height: 400px;
+    background: url(../img/ny.png);
+    background-size: cover;
+    animation: photo 4s linear infinite;
+}
+@keyframes photo {
+0%{
+    transform: scale3d(0,0,1);
+}
+50%{
+    transform: none;
+}
+100%{
+    transform: scale3d(0,0,1);
+    transform: rotate3d(1,0.5,1,-50deg)
+} 
+}
+.conteinerdz{
+margin: 0 auto;
+height: 300px;
+width: 300px;
+perspective: 1000px;
+}
+.maps{
+    transform-origin: 100px 100px 100px;
+    transform-style: preserve-3d;
+    animation: map 5s linear infinite;
+}
+@keyframes map {
+    0%{
+        transform: rotateY(0);
+    }
+    100%{
+        transform: rotateY(360deg);
+    }
+    
+}
+.middle{
+    position: absolute;
+    width: 200px;
+    height: 300px;
+    border: 2px solid black;
+    transform: translateZ(150px);
+}
+.front{
+    position: absolute;
+    top: 20px;
+    left: -10px;
+    width: 220px;
+    height: 30px;
+    background: rgb(128, 128, 199);
+    border: 1px solid black;
+    transform: translateZ(160px);
+}
+.left{
+    position: absolute;
+    top: 20px;
+    left: -20px;
+    width: 20px;
+    height: 30px;
+    background: rgb(128, 128, 199);
+    border: 1px solid black;
+    transform: translateZ(150px) rotateY(90deg);
+}
