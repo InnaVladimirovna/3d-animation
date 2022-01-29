@@ -1,4 +1,4 @@
-.conteiner{
+/* .conteiner{
     position: relative;
     width: 400px;
     height: 400px;
@@ -46,12 +46,13 @@
     transform: scale3d(0,0,1);
     transform: rotate3d(1,0.5,1,-50deg)
 } 
-}
+} */
 .conteinerdz{
 margin: 0 auto;
 height: 300px;
 width: 300px;
 perspective: 1000px;
+padding-top: 100px;
 }
 .maps{
     transform-origin: 100px 100px 100px;
@@ -72,7 +73,15 @@ perspective: 1000px;
     width: 200px;
     height: 300px;
     border: 2px solid black;
+    border-radius: 20px;
     transform: translateZ(150px);
+    background: white;
+}
+h1{
+    color: rgb(173, 85, 85);
+    font-size: 16px;
+    text-transform: uppercase;
+    margin: 4px 0 0 144px;
 }
 .front{
     position: absolute;
@@ -93,4 +102,24 @@ perspective: 1000px;
     background: rgb(128, 128, 199);
     border: 1px solid black;
     transform: translateZ(150px) rotateY(90deg);
+}
+.right{
+    position: absolute;
+    top: 20px;
+    left: 200px;
+    width: 20px;
+    height: 30px;
+    background: rgb(128, 128, 199);
+    border: 1px solid black;
+    transform: translateZ(150px) rotateY(90deg);
+}
+.back{
+    position: absolute;
+    top: 20px;
+    left: -10px;
+    width: 220px;
+    height: 30px;
+    background: rgb(128, 128, 199);
+    border: 1px solid black;
+    transform: translateZ(140px);
 }
